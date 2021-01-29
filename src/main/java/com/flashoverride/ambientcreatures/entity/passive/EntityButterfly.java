@@ -6,8 +6,8 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 
-import com.bioxx.tfc.Core.TFC_Climate;
-import com.bioxx.tfc.Core.TFC_Core;
+import com.dunk.tfc.Core.TFC_Climate;
+import com.dunk.tfc.Core.TFC_Core;
 
 public class EntityButterfly extends EntityAmbientCreatureTFC
 {

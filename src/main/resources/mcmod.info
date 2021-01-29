@@ -1,21 +1,20 @@
+[
 {
-    "modListVersion": 2,
-    "modList": [{
-        "modid": "ambientcreatures",
-        "name": "Ambient Creatures",
-        "description": "§bThis mod adds additional functionality for use with TerraFirmaCraft §a${tfc_version}.§r",
-        "version": "${mod_version}",
-        "mcversion": "${minecraft_version}",
-        "url": "",
-        "updateUrl": "",
-        "authorList": ["§6Konlii§r"],
-        "credits": "",
-        "logoFile": "",
-        "screenshots": [],
-        "parent": "",
-        "requiredMods": [  ],
-        "dependencies": [  ],
-        "dependants": [  ],
-        "useDependencyInformation": "true"
-    }]
+    "modid": "ambientcreatures",
+    "name": "Ambient Creatures",
+    "description": "This mod adds additional functionality for use with TerraFirmaCraft+.",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "updateUrl": "",
+    "authorList": ["Konlii"],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "parent": "",
+    "requiredMods": [  ],
+    "dependencies": [  ],
+    "dependants": [  ],
+    "useDependencyInformation": "true"
 }
+]

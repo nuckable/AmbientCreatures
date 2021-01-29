@@ -2,13 +2,14 @@ package com.flashoverride.ambientcreatures.core;
 
 import java.io.File;
 
+import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.item.Item;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.world.World;
 
-import com.bioxx.tfc.Handlers.ServerTickHandler;
-import com.bioxx.tfc.WorldGen.TFCBiome;
+import com.dunk.tfc.Handlers.ServerTickHandler;
+import com.dunk.tfc.WorldGen.TFCBiome;
 import com.flashoverride.ambientcreatures.AmbientCreatures;
 import com.flashoverride.ambientcreatures.items.ItemCreaturePlacer;
 
@@ -117,7 +118,7 @@ public class ModCommonProxy
 	{
 	}
 	
-	public void addAmbientSpawn(Class entityClass, int weightedProb, int min, int max)
+	public void addAmbientSpawn(Class<? extends EntityLiving > entityClass, int weightedProb, int min, int max)
 	{
 	    for (int i = 0; i < TFCBiome.getBiomeGenArray().length; i++)
 	    {
@@ -128,13 +129,13 @@ public class ModCommonProxy
 	    }
 	}
 	
-	public void registerModEntityWithSpawn(Class entityClass, String entityName, int weightedProb, int min, int max)
+	public void registerModEntityWithSpawn(Class<? extends EntityLiving > entityClass, String entityName, int weightedProb, int min, int max)
 	{
 		EntityRegistry.registerModEntity(entityClass, entityName, ++modEntityID, AmbientCreatures.instance, 80, 3, false);
    		this.addAmbientSpawn(entityClass, weightedProb, min, max);
 	}
 	
-	public void registerModEntityWithEgg(Class parEntityClass, String parEntityName, int parEggColor, int parEggSpotsColor, int weightedProb, int min, int max)
+	public void registerModEntityWithEgg(Class<? extends EntityLiving > parEntityClass, String parEntityName, int parEggColor, int parEggSpotsColor, int weightedProb, int min, int max)
 	{
 	    this.registerModEntityWithSpawn(parEntityClass, parEntityName, weightedProb, min, max);
 	    registerSpawnEgg(parEntityName, parEggColor, parEggSpotsColor);

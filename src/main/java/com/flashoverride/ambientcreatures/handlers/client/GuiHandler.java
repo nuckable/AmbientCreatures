@@ -1,7 +1,6 @@
 package com.flashoverride.ambientcreatures.handlers.client;
 
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 
 public class GuiHandler extends com.flashoverride.ambientcreatures.handlers.GuiHandler
@@ -9,7 +8,7 @@ public class GuiHandler extends com.flashoverride.ambientcreatures.handlers.GuiH
 	@Override
 	public Object getClientGuiElement(int Id, EntityPlayer player, World world, int x, int y, int z) 
 	{
-		TileEntity tileEntity;
+		/*TileEntity tileEntity;
 		
 		try
 		{
@@ -22,11 +21,12 @@ public class GuiHandler extends com.flashoverride.ambientcreatures.handlers.GuiH
 
 		switch (Id)
 		{
-//			case GuiIdCustom:
-//				return new GuiCustom(player.inventory, (TileEntityCustom)tileEntity, world, x, y, z);
+			case GuiIdCustom:
+				return new GuiCustom(player.inventory, (TileEntityCustom)tileEntity, world, x, y, z);
 				
 			default:
 				return null;
-		}
+		}*/
+		return null;
 	}
 }

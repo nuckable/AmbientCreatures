@@ -4,7 +4,7 @@ import java.io.File;
 
 import net.minecraftforge.common.MinecraftForge;
 
-import com.bioxx.tfc.TerraFirmaCraft;
+import com.dunk.tfc.TerraFirmaCraft;
 import com.flashoverride.ambientcreatures.core.ModBlocks;
 import com.flashoverride.ambientcreatures.core.ModCommonProxy;
 import com.flashoverride.ambientcreatures.core.ModDetails;

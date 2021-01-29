@@ -204,12 +204,13 @@ public class ItemCreaturePlacer extends ItemMonsterPlacer
 //        
 //     }
 
-    /**
+    @SuppressWarnings("unchecked")
+	/**
      * returns a list of items with the same ID, but different meta (eg: dye returns 16 items)
      */
     @Override
 	@SideOnly(Side.CLIENT)
-    public void getSubItems(Item parItem, CreativeTabs parTab, List parList)
+    public void getSubItems(Item parItem, CreativeTabs parTab, @SuppressWarnings("rawtypes") List parList)
     {
         parList.add(new ItemStack(parItem, 1, 0));    	
     }
